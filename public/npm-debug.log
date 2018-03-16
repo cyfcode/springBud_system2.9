@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova',
+1 verbose cli   'ionic' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData cordova
+8 silly fetchPackageMetaData ionic
+9 silly fetchNamedPackageData cordova
+10 silly mapToRegistry name cordova
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'cordova',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'cordova',
+13 silly mapToRegistry   name: 'cordova',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/cordova
+15 silly fetchNamedPackageData ionic
+16 silly mapToRegistry name ionic
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'ionic',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'ionic',
+19 silly mapToRegistry   name: 'ionic',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/ionic
+21 verbose request uri https://registry.npmjs.org/cordova
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 10:22:35
+24 verbose request id fde4998d924e9cba
+25 http request GET https://registry.npmjs.org/cordova
+26 verbose request uri https://registry.npmjs.org/ionic
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 10:22:35
+29 http request GET https://registry.npmjs.org/ionic
+30 verbose stack Error: kill ENOSYS
+30 verbose stack     at exports._errnoException (util.js:1018:11)
+30 verbose stack     at process.kill (internal/process.js:190:13)
+30 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+30 verbose stack     at emitNone (events.js:91:20)
+30 verbose stack     at process.emit (events.js:185:7)
+30 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+30 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+30 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+31 verbose cwd E:\springBud_system\public
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "cordova" "ionic"
+34 error node v6.11.0
+35 error npm  v3.10.10
+36 error code ENOSYS
+37 error errno ENOSYS
+38 error syscall kill
+39 error kill ENOSYS
+40 error If you need help, you may report this error at:
+40 error     <https://github.com/npm/npm/issues>
+41 verbose exit [ 1, true ]

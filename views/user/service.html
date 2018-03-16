@@ -1,0 +1,273 @@
+<%-include ../include/header.html%>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 text-center">
+            <ul class="list-group">
+                <li class="list-group-item active"><h4>首页</h4></li>
+                <li class="list-group-item">待检查</li>
+                <li class="list-group-item">待处理</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    信息查询
+                </li>
+                <li class="list-group-item"><a href="https://ybbentry.sbb-sys.info/sbc/entry/kaisen.jsp">查邮编</a></li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    常用网站
+                </li>
+                <li class="list-group-item"><a href="">信息录入</a></li>
+                <li class="list-group-item">信息查询</li>
+                <li class="list-group-item">信息查询</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    常用网站
+                </li>
+                <li class="list-group-item">信息查询</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    常用网站
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9 col-md-offset-1">
+            <div class="row">
+                <h3 class="text-muted">客户信息录入</h3>
+                <span class="text-danger">认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息认真核对客人信息</span>
+            </div>
+            <div class="row">
+                <form role="form" class="form-horizontal" method="post">
+                    <div class="checkbox">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">选择网络类型</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-md-3">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios1" value="option1" checked> 选项 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios2" value="option2">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios3" value="option3"> 选项 3
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios4" value="option4">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios5" value="option5">选项 2
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios6" value="option6"> 选项 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios7" value="option7">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios8" value="option8"> 选项 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios9" value="option9">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios10" value="option10">选项 2
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios11" value="option11"> 选项 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios12" value="option12">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios13" value="option13"> 选项 1
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios14" value="option14">选项 2
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="internet_type" id="optionsRadios15" value="option15">选项 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">日文名称</div>
+                                    <input type="text" class="form-control" required placeholder="客户名称" name="name_furi">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">中文名称</div>
+                                    <input type="text" class="form-control" required placeholder="客户名称" name="name_kan">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">申请日期</div>
+                                    <input type="text" class="form-control" placeholder="申请日期" name="cl_askdate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">电话</div>
+                                    <input type="text" class="form-control" required placeholder="电话" name="cl_phone">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-primary">性别</button>
+                                    &nbsp;<input type="radio" name="sex" value="男" checked>男
+                                    &nbsp;<input type="radio" name="sex" value="女">女
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">座机</div>
+                                    <input type="text" class="form-control" placeholder="固定电话" name="mo_tel">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">出生日期</div>
+                                    <input type="text" class="form-control" placeholder="出生日期" name="birthday">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">邮编</div>
+                                    <input type="text" class="form-control" required placeholder="邮编" name="zip_code">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">工事日期</div>
+                                    <input type="text" class="form-control" placeholder="工事日期" name="cl_dotime">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">地址</div>
+                                    <input type="text" class="form-control" required placeholder="现住址" name="address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">客户来源</div>
+                                    <select class="selectpicker" name="guest_order">
+                                        <option name="" value=""></option>
+                                        <option>朋友介绍</option>
+                                        <option>代理</option>
+                                        <option>老客户换网</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">客户来源</div>
+                                    <select class="selectpicker" name="guest_from">
+                                        <option name="" value="">担当姓名</option>
+                                        <option>1</option>
+                                        <option>afds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-primary">返金</button>
+                                    &nbsp<input type="radio" name="present" value="30000返金" checked>30000返金
+                                    &nbsp<input type="radio" name="present" value="35000返金">35000返金
+                                    &nbsp<input type="radio" name="present" value="40000返金">40000返金
+                                    &nbsp<input type="radio" name="present" value="45000返金">45000返金
+                                    &nbsp<input type="radio" name="present" value="6个月无料">6个月无料
+                                    &nbsp<input type="radio" name="present" value="PC割引">PC割引
+                                    &nbsp<input type="radio" name="present" value="无料PC一台">无料PC一台
+                                    &nbsp<input type="text" name="present" placeholder="自定义">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">录入者</div>
+                                    <input type="text" class="form-control" placeholder="表格录入者" value="" name="worker">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <button type="button" class="btn btn-primary">回访记录</button>
+                                <textarea name="memo" id="content" cols="50" rows="12" placeholder="记录"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn col-md-6 col-md-offset-3">
+                        <div class="row">
+                            <div class="post col-md-3">
+                                <button type="submit" class="btn btn-success btn-lg">提交</button>
+                            </div>
+                            <div class="preview col-md-3">
+                                <button type="submit" class="btn btn-info btn-lg">预览</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<%-include ../include/footer.html%>

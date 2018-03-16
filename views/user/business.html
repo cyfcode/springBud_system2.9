@@ -1,0 +1,132 @@
+<%-include ../include/header.html%>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">首页</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/users/input">新增客户</a></li>
+                    <li><a href="#">暂未开放</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人信息</a></li>
+                            <li><a href="#">已营业</a></li>
+                            <li><a href="#">待处理</a></li>
+                            <li class="divider">4</li>
+                            <li><a href="#">5</a></li>
+                            <li class="divider">6</li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <form role="form" class="form-horizontal col-sm-12" method="post">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="username" class="control-label col-sm-2">用户名:</label>
+                        <div class="col-sm-10 input-group">
+                            <input type="text" id="username" name="name_furi name_kan" class="form-control" placeholder="用户名称">
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="phonenum" class="control-label col-sm-2">电话:</label>
+                        <div class="col-sm-10 input-group">
+                            <input type="text" id="phonenum" name="mo_tel" class="form-control" placeholder="电话">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                            <label for="askdate" class="control-label col-sm-3">申请日期:</label>
+                        <div class='input-group col-sm-9'>
+                            <input type='date' class="form-control" id="askdate" name="cl_askdate" placeholder="申请日期">
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="dodate" class="control-label col-sm-3">工事日期:</label>
+                        <div class="col-sm-9 input-group">
+                            <input type="date" id="dodate" name="cl_dodate" class="form-control" placeholder="工事日期">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                            <label for="address" class="control-label col-sm-3">客户地址:</label>
+                            <div class="col-sm-9 input-group">
+                                <input type="text" id="address" name="address" class="form-control" placeholder="客户地址">
+                            </div>
+                        </div>
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-primary col-sm-6 col-lg-offset-3">查找</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <table class="table table-bordered table-hover"  id="guest">
+        <caption><h1>客户列表</h1></caption>
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>申请网络类型</th>
+            <th>名称</th>
+            <th>电话</th>
+            <th>日期</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Uma</td>
+            <td>Pune</td>
+            <td>411027</td>
+            <td>Tanmay</td>
+            <td>Bangalore</td>
+            <td><button type="submit" class="btn btn-warning">查看</button></td>
+        </tr>
+        <tr v-for="(vm in guest">
+            <td>{{vm.order_id}}</td>
+            <td>{{vm.internet_type}}</td>
+            <td>{{vm.name_furi&&name.name_kan}}</td>
+            <td>{{vm.motel}}</td>
+            <td>{{vm.cl_askdate}}</td>
+            <td><button type="submit" class="btn btn-warning" @click="lookthis(vm)">查看</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<%-include ../include/footer.html%>
+<script>
+    let guest = new Vue({
+        el:'#guest',
+        created(){
+            axios.get('http://127.0.0.1:3306/guest1.1/user_internet').
+            then(res=>{this.guest=res.data},
+                error=>{console.log(error)});
+        },
+        data: {
+            guest:[
+
+            ]
+        },
+        methods:{
+            lookthis(p){
+                this.guest = this.guest.filter(item=>item!==p);
+                console.log(this.guest);
+            }
+        }
+    });
+</script>

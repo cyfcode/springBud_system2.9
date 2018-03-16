@@ -1,0 +1,154 @@
+<%-include ../include/header.html%>
+<div class="row">
+    <div class="col-md-2 text-center">
+            <ul class="list-group">
+                <li class="list-group-item active"><h4>首页</h4></li>
+                <li class="list-group-item"><a href="./business">客户信息查询</a></li>
+                <li class="list-group-item">暂未开放</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    暂未开放
+                </li>
+                <li class="list-group-item">暂未开放</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    暂未开放
+                </li>
+                <li class="list-group-item"><a href="">信息录入</a></li>
+                <li class="list-group-item">暂未开放</li>
+                <li class="list-group-item">暂未开放</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    暂未开放
+                </li>
+                <li class="list-group-item">暂未开放</li>
+                <li class="list-group-item">
+                    <span class="badge">新</span>
+                    暂未开放
+                </li>
+            </ul>
+        </div>
+    <div class="col-md-9 col-md-offset-1">
+            <div class="row">
+                <h3 class="text-muted">客户信息</h3>
+            </div>
+            <div class="row">
+                <form role="form" class="form-horizontal" method="post">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">客户ID</div>
+                                    <input type="text" class="form-control" name="order_id" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">日文名称</div>
+                                    <input type="text" class="form-control" name="name_furi" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">中文名称</div>
+                                    <input type="text" class="form-control" name="name_kan" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">申请日期</div>
+                                    <input type="text" class="form-control" name="cl_askdate" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">电话</div>
+                                    <input type="text" class="form-control" name="cl_phone" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-primary">性别</button>
+                                    &nbsp;<input type="radio" name="sex" value="0" checked>男
+                                    &nbsp;<input type="radio" name="sex" value="1">女
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">座机</div>
+                                    <input type="text" class="form-control" name="mo_tel" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">工事日期</div>
+                                    <input type="text" class="form-control" name="cl_dodate" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">邮编</div>
+                                    <input type="text" class="form-control" name="zip_code" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-lg-push-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">享受优惠</div>
+                                    <input type="text" class="form-control" name="present" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">地址</div>
+                                    <input type="text" class="form-control" name="address" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">客户来源</div>
+                                    <input type="text" class="form-control" name="guest_order" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <div class="input-group">
+                                    <div class="input-group-addon">营业担当</div>
+                                    <input type="text" class="form-control" name="guest_from" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5">
+                                <button type="button" class="btn btn-primary">回访记录</button>
+                                <textarea name="memo" id="content" cols="40" rows="10" readonly>
+
+                                </textarea>
+                            </div>
+                            <div class="form-group col-md-5 col-lg-push-1">
+                                <button type="button" class="btn btn-primary">点击添加</button>
+                                <textarea name="add" id="add" cols="40" rows="10" placeholder="追加记录">
+
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+<%-include ../include/footer.html%>
